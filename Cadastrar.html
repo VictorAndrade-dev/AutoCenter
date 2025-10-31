@@ -9,10 +9,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.css">
+
   <style>
     /* Ajuste extra de espaçamento e alinhamento */
     input {
       padding-left: 2.8rem !important;
+      color: #111827 !important; /* preto visível */
+    }
+    input::placeholder {
+      color: #9ca3af !important; /* cinza mais claro para contraste */
     }
     .icon-left {
       position: absolute;
@@ -40,36 +45,36 @@
           <div class="relative">
             <i data-feather="user" class="icon-left h-5 w-5"></i>
             <input id="first-name" name="first-name" type="text" placeholder="Nome"
-              class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+              class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
           </div>
           <div>
             <input id="last-name" name="last-name" type="text" placeholder="Sobrenome"
-              class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+              class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
           </div>
         </div>
 
         <div class="relative">
           <i data-feather="mail" class="icon-left h-5 w-5"></i>
           <input id="email" name="email" type="email" placeholder="Seu email"
-            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
         </div>
 
         <div class="relative">
           <i data-feather="phone" class="icon-left h-5 w-5"></i>
           <input id="phone" name="phone" type="tel" placeholder="Telefone"
-            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
         </div>
 
         <div class="relative">
           <i data-feather="lock" class="icon-left h-5 w-5"></i>
           <input id="password" name="password" type="password" placeholder="Senha"
-            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
         </div>
 
         <div class="relative">
           <i data-feather="check-circle" class="icon-left h-5 w-5"></i>
           <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirmar Senha"
-            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
         </div>
 
         <div class="flex items-start">
