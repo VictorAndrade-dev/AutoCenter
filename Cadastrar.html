@@ -1,134 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,400italic,700,900%7CPlayfair+Display:700italic,900">
-    <link rel="stylesheet" href="css/bootstrap.css">
-  
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    /* Ajuste extra de espaçamento e alinhamento */
+    input {
+      padding-left: 2.8rem !important;
+    }
+    .icon-left {
+      position: absolute;
+      top: 50%;
+      left: 0.75rem;
+      transform: translateY(-50%);
+      color: #9ca3af; /* cinza */
+    }
+  </style>
 </head>
+
 <body class="bg-gray-100">
-    <custom-navbar></custom-navbar>
-    
-    <main class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-md w-full bg-white p-8 rounded-xl shadow-lg">
-            <div class="text-center">
-                <i data-feather="user-plus" class="mx-auto h-12 w-12 text-orange-500"></i>
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Crie sua conta</h2>
-                <p class="mt-2 text-sm text-gray-600">
-                    Já tem uma conta? <a href="login.html" class="font-medium text-orange-600 hover:text-orange-500">Faça login</a>
-                </p>
-            </div>
-            
-            <form class="mt-8 space-y-6" action="#" method="POST">
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label for="first-name" class="sr-only">Nome</label>
-                        <div class="relative">
-                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <i data-feather="user" class="h-5 w-5 text-gray-400"></i>
-                            </div>
-                            <input id="first-name" name="first-name" type="text" autocomplete="given-name" required 
-                                class="pl-10 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500" 
-                                placeholder="Nome">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="last-name" class="sr-only">Sobrenome</label>
-                        <input id="last-name" name="last-name" type="text" autocomplete="family-name" required 
-                            class="block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500" 
-                            placeholder="Sobrenome">
-                    </div>
-                </div>
+  <main class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full bg-white p-8 rounded-xl shadow-lg">
+      <div class="text-center">
+        <i data-feather="user-plus" class="mx-auto h-12 w-12 text-orange-500"></i>
+        <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Crie sua conta</h2>
+        <p class="mt-2 text-sm text-gray-600">
+          Já tem uma conta? <a href="login.html" class="font-medium text-orange-600 hover:text-orange-500">Faça login</a>
+        </p>
+      </div>
 
-                <div>
-                    <label for="email" class="sr-only">Email</label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <i data-feather="mail" class="h-5 w-5 text-gray-400"></i>
-                        </div>
-                        <input id="email" name="email" type="email" autocomplete="email" required 
-                            class="pl-10 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500" 
-                            placeholder="Seu email">
-                    </div>
-                </div>
-
-                <div>
-                    <label for="phone" class="sr-only">Telefone</label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <i data-feather="phone" class="h-5 w-5 text-gray-400"></i>
-                        </div>
-                        <input id="phone" name="phone" type="tel" autocomplete="tel" required 
-                            class="pl-10 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500" 
-                            placeholder="Telefone">
-                    </div>
-                </div>
-
-                <div>
-                    <label for="password" class="sr-only">Senha</label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <i data-feather="lock" class="h-5 w-5 text-gray-400"></i>
-                        </div>
-                        <input id="password" name="password" type="password" autocomplete="new-password" required 
-                            class="pl-10 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500" 
-                            placeholder="Senha">
-                    </div>
-                </div>
-
-                <div>
-                    <label for="confirm-password" class="sr-only">Confirmar Senha</label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <i data-feather="check-circle" class="h-5 w-5 text-gray-400"></i>
-                        </div>
-                        <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required 
-                            class="pl-10 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500" 
-                            placeholder="Confirmar Senha">
-                    </div>
-                </div>
-
-                <div class="flex items-start">
-                    <div class="flex items-center h-5">
-                        <input id="terms" name="terms" type="checkbox" 
-                            class="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded" required>
-                    </div>
-                    <div class="ml-3 text-sm">
-                        <label for="terms" class="font-medium text-gray-700">Eu concordo com os <a href="#" class="text-orange-600 hover:text-orange-500">Termos de Serviço</a> e <a href="#" class="text-orange-600 hover:text-orange-500">Política de Privacidade</a></label>
-                    </div>
-                </div>
-
-                <div>
-                    <button type="submit" 
-                        class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition duration-300">
-                        <span class="absolute left-0 inset-y-0 flex items-center pl-3">
-                            <i data-feather="user-plus" class="h-5 w-5 text-orange-300 group-hover:text-orange-200"></i>
-                        </span>
-                        Criar Conta
-                    </button>
-                </div>
-            </form>
+      <form class="mt-8 space-y-6" action="#" method="POST">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="relative">
+            <i data-feather="user" class="icon-left h-5 w-5"></i>
+            <input id="first-name" name="first-name" type="text" placeholder="Nome"
+              class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+          </div>
+          <div>
+            <input id="last-name" name="last-name" type="text" placeholder="Sobrenome"
+              class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+          </div>
         </div>
-    </main>
 
-    <custom-footer></custom-footer>
-    <script src="scriptLogin.js"></script>
-    <script>
-        feather.replace();
-    </script>
+        <div class="relative">
+          <i data-feather="mail" class="icon-left h-5 w-5"></i>
+          <input id="email" name="email" type="email" placeholder="Seu email"
+            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+        </div>
+
+        <div class="relative">
+          <i data-feather="phone" class="icon-left h-5 w-5"></i>
+          <input id="phone" name="phone" type="tel" placeholder="Telefone"
+            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+        </div>
+
+        <div class="relative">
+          <i data-feather="lock" class="icon-left h-5 w-5"></i>
+          <input id="password" name="password" type="password" placeholder="Senha"
+            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+        </div>
+
+        <div class="relative">
+          <i data-feather="check-circle" class="icon-left h-5 w-5"></i>
+          <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirmar Senha"
+            class="block w-full py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+        </div>
+
+        <div class="flex items-start">
+          <div class="flex items-center h-5">
+            <input id="terms" name="terms" type="checkbox"
+              class="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded" required>
+          </div>
+          <div class="ml-3 text-sm">
+            <label for="terms" class="font-medium text-gray-700">
+              Eu concordo com os
+              <a href="#" class="text-orange-600 hover:text-orange-500">Termos de Serviço</a>
+              e
+              <a href="#" class="text-orange-600 hover:text-orange-500">Política de Privacidade</a>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit"
+          class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition duration-300">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <i data-feather="user-plus" class="h-5 w-5 text-orange-300 group-hover:text-orange-200"></i>
+          </span>
+          Criar Conta
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      feather.replace();
+    });
+  </script>
 </body>
 </html>
-
