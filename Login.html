@@ -88,19 +88,21 @@
     <custom-footer></custom-footer>
     <script src="script.js"></script>
     <script>
-         document.addEventListener("DOMContentLoaded", function() {
-            feather.replace();
+    document.addEventListener("DOMContentLoaded", function() {
+    feather.replace();
+    // Seleciona o formulário
+    const form = document.querySelector("form");
 
-            // Redireciona ao clicar em "Entrar"
-            const form = document.getElementById("loginForm");
-            form.addEventListener("submit", function(e) {
-                e.preventDefault(); // impede envio padrão
-                window.location.href = "index.html"; // redireciona para a página inicial
-            });
-        });
+    // Impede o envio e redireciona para a página de login
+    form.addEventListener("submit", function(e) {
+      e.preventDefault(); // impede o envio padrão
+      window.location.href = "index.html"; // redireciona
+    });
+  });
     </script>
 </body>
 </html>
+
 
 
 
