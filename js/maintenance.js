@@ -1,5 +1,5 @@
 // Senha de desenvolvedor (deve ser alterada em produção)
-const DEV_PASSWORD = "admin123";
+const DEV_PASSWORD = "22042008Vh#";
 
 function checkPassword() {
   const passwordInput = document.getElementById('dev-password');
