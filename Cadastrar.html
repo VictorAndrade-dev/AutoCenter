@@ -97,19 +97,28 @@
           <span class="absolute left-0 inset-y-0 flex items-center pl-3">
             <i data-feather="user-plus" class="h-5 w-5 text-orange-300 group-hover:text-orange-200"></i>
           </span>
-          Criar Conta <a href="Login.html" >Criar Conta</a>
+          Criar Conta
         </button>
       </form>
     </div>
   </main>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      feather.replace();
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    feather.replace();
+    // Seleciona o formulário
+    const form = document.querySelector("form");
+
+    // Impede o envio e redireciona para a página de login
+    form.addEventListener("submit", function(e) {
+      e.preventDefault(); // impede o envio padrão
+      window.location.href = "Login.html"; // redireciona
     });
-  </script>
+  });
+</script>
 </body>
 </html>
+
 
 
 
