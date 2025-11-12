@@ -68,8 +68,7 @@
                         <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                             <i data-feather="log-in" class="h-5 w-5 text-orange-300 group-hover:text-orange-200"></i>
                         </span>
-                        <a href="Index.html"> Entrar </a>
-
+                        Entrar
                     </button>
                 </div>
             </form>
@@ -90,7 +89,14 @@
     <script src="script.js"></script>
     <script>
         feather.replace();
+        // Redireciona ao clicar em "Entrar"
+            const form = document.getElementById("loginForm");
+            form.addEventListener("submit", function(e) {
+                e.preventDefault(); // impede envio padrão
+                window.location.href = "Index.html"; // redireciona para a página inicial
+            });
     </script>
 </body>
 </html>
+
 
