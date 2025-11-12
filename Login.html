@@ -88,16 +88,20 @@
     <custom-footer></custom-footer>
     <script src="script.js"></script>
     <script>
-        feather.replace();
-        // Redireciona ao clicar em "Entrar"
+         document.addEventListener("DOMContentLoaded", function() {
+            feather.replace();
+
+            // Redireciona ao clicar em "Entrar"
             const form = document.getElementById("loginForm");
             form.addEventListener("submit", function(e) {
                 e.preventDefault(); // impede envio padrão
                 window.location.href = "index.html"; // redireciona para a página inicial
             });
+        });
     </script>
 </body>
 </html>
+
 
 
 
