@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="pt-br">
+  <head>
+    <title>Contato</title>
+    <!-- Meta tags e CSS iguais ao index.html -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,400italic,700,900%7CPlayfair+Display:700italic,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  </head>
+  <body>
+ <!-- Preloader e Navbar iguais ao index.html -->
+ <div class="preloader">
+      <div><a class="brand brand-md" href="index.html"><img src="Imagens_oficiais/LogoB.png" width="139" height="22"/></a>
+        <div class="page-loader-body">
+          <div id="spinningSquaresG">
+            <div class="spinningSquaresG" id="spinningSquaresG_1"></div>
+            <div class="spinningSquaresG" id="spinningSquaresG_2"></div>
+            <div class="spinningSquaresG" id="spinningSquaresG_3"></div>
+            <div class="spinningSquaresG" id="spinningSquaresG_4"></div>
+            <div class="spinningSquaresG" id="spinningSquaresG_5"></div>
+            <div class="spinningSquaresG" id="spinningSquaresG_6"></div>
+            <div class="spinningSquaresG" id="spinningSquaresG_7"></div>
+            <div class="spinningSquaresG" id="spinningSquaresG_8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <header class="page-head">
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" data-lg-stick-up-offset="60px" data-xl-stick-up-offset="60px" data-xxl-stick-up-offset="60px">
+            <div class="rd-navbar-inner">
+              <div class="rd-navbar-panel">
+                <button class="rd-navbar-toggle" data-custom-toggle=".rd-navbar-nav-wrap" data-custom-toggle-disable-on-blur="true"><span></span></button><a class="rd-navbar-brand brand" href="index.html"><img src="Imagens_oficiais/Logo.jpg" alt="AutoCenter Logo" class="img-fluid">  <!-- Mudar dps hehe --></a>
+              </div>
+              <div class="rd-navbar-group rd-navbar-search-wrap">
+                <div class="rd-navbar-nav-wrap">
+                  <div class="rd-navbar-nav-inner">
+                    <div class="rd-navbar-search">
+                      <form class="rd-search" action="#" method="GET" data-search-live="rd-search-results-live">
+                        <div class="form-wrap">
+                          <label class="form-label" for="rd-search-form-input">Search...</label>
+                          <input class="form-input" id="rd-search-form-input" type="text" name="s" autocomplete="off">
+                          <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                        </div>
+                        <button class="rd-search-submit" type="submit"></button>
+                      </form>            
+                    </div>
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Início</a>
+                      </li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="Servicos.html">Serviços</a>
+                      </li>
+                       <li class="rd-nav-item"><a class="rd-nav-link" href="Contato.html">Contato</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="Cadastrar.html">Cadastro/Login</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="Manutencao.html">Manutenção</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>   
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+        
+    <section class="section section-60 section-md-100 section-xl-top-120 section-xl-bottom-145">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="mb-4">Entre em Contato</h2>
+            <form id="contact-form" class="rd-form">
+              <div class="form-wrap">
+                <input class="form-input" id="contact-name" type="text" name="name" required>
+                <label class="form-label" for="contact-name">Seu Nome</label>
+              </div>
+              <div class="form-wrap">
+                <input class="form-input" id="contact-email" type="email" name="email" required>
+                <label class="form-label" for="contact-email">Seu Email</label>
+              </div>
+              <div class="form-wrap">
+                <input class="form-input" id="contact-phone" type="tel" name="phone">
+                <label class="form-label" for="contact-phone">Seu Telefone</label>
+              </div>
+              <div class="form-wrap">
+                <select class="form-input" id="contact-subject" name="subject" required>
+                  <option value="">Selecione um assunto</option>
+                  <option value="orcamento">Orçamento</option>
+                  <option value="agendamento">Agendamento</option>
+                  <option value="duvida">Dúvida</option>
+                  <option value="reclamacao">Reclamação</option>
+                  <option value="elogio">Elogio</option>
+                </select>
+              </div>
+              <div class="form-wrap">
+                <textarea class="form-input" id="contact-message" name="message" required></textarea>
+                <label class="form-label" for="contact-message">Sua Mensagem</label>
+              </div>
+              <button class="button button-primary" type="submit">Enviar Mensagem</button>
+            </form>
+          </div>
+          
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="contact-info-box p-4">
+              <h3 class="mb-4">Informações de Contato</h3>
+              
+              <div class="contact-item mb-3">
+                <div class="contact-icon">
+                  <i class="material-icons-place"></i>
+                </div>
+                <div class="contact-text">
+                  <h5>Endereço</h5>
+                  <p>Av. Paulo VI, 2003, Jardim Alvorada<br>Franca - SP</p>
+                </div>
+              </div>
+              
+              <div class="contact-item mb-3">
+                <div class="contact-icon">
+                  <i class="material-icons-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h5>Telefones</h5>
+                  <p>(16) 3432-8200<br>(16) 99262-8548</p>
+                </div>
+              </div>
+              
+              <div class="contact-item mb-3">
+                <div class="contact-icon">
+                  <i class="material-icons-email"></i>
+                </div>
+                <div class="contact-text">
+                  <h5>Email</h5>
+                  <p>nossoautoautocenter@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="material-icons-access_time"></i>
+                </div>
+                <div class="contact-text">
+                  <h5>Horário de Funcionamento</h5>
+                  <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.992968291511!2d-47.39651342403249!3d-20.568541573730012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a60b5b4815b5%3A0x1f7b0a2f2f2f2f2f!2sNosso%20Auto%20Center!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-foot page-foot-default section-35 bg-black novi-background">
+      <div class="container">
+        <p class="rights small"><span>Nosso Auto Center</span><span>&nbsp;&#169;&nbsp;</span><span class="copyright-year"></span><span>Todos os direitos reservados.</span></p>
+      </div>
+    </footer>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
