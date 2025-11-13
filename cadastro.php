@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
     // Verifica se o e-mail já existe
-    $check = $conn->prepare("SELECT id FROM usuarios WHERE email = ?");
+    $check = $conn->prepare("SELECT id FROM usuario WHERE email = ?");
     $check->bind_param("s", $email);
     $check->execute();
     $check->store_result();
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<script>alert('E-mail já cadastrado!'); window.history.back();</script>";
     } else {
         // Insere o novo usuário
-        $stmt = $conn->prepare("INSERT INTO usuarios (nome, sobrenome, email, telefone, senha) VALUES (?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO usuario (nome, sobrenome, email, telefone, senha) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss", $nome, $sobrenome, $email, $telefone, $senhaHash);
 
         if ($stmt->execute()) {
