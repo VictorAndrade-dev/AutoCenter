@@ -2,7 +2,7 @@
 $servidor = "sql203.infinityfree.com"; // troque pelo seu
 $usuario = "if0_39062099"; 
 $senha = "22042008Vh";
-$banco = "if0_39062099_usuarios";
+$banco = "if0_39062099_clientes";
 
 $conn = new mysqli($servidor, $usuario, $senha, $banco);
 
