@@ -7,13 +7,10 @@ $password = "Victor22042008Vh#";
 $bd = "bd_oficina";
 
 $conn = new mysqli($servidor, $user, $password, $bd);
-if(!$conn) {
-    echo "Connection Error". PHP_EOL;
-    echo "Error Code: ".mysqli_connect_errno().PHP_EOL;
-    echo "Error: ".mysqli_connect_error().PHP_EOL;
-    exit;
-}
 
+if ($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //Recupera os valores
@@ -55,3 +52,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $conn -> close();
 
 ?>
+
