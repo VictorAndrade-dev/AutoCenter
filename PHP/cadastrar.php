@@ -6,7 +6,7 @@ $user = "root";
 $password = "Victor22042008Vh#";
 $bd = "bd_oficina";
 
-$conn = new mysql($servidor, $user, $password, $bd);
+$conn = new mysqli($servidor, $user, $password, $bd);
 if(!$conn) {
     echo "Connection Error". PHP_EOL;
     echo "Error Code: ".mysqli_connect_errno().PHP_EOL;
@@ -53,4 +53,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn -> close();
+
 ?>
